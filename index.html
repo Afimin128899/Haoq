@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090d" />
+    <title>Dip API — цифровые сервисы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar wrap">
+      <a class="brand" href="#top" aria-label="Dip API">
+        <span class="brand-mark">D</span><span>DIP<span class="accent">.API</span></span>
+      </a>
+      <nav class="nav" aria-label="Главная навигация">
+        <a class="active" href="#catalog">Каталог</a><a href="#how">Как это работает</a><a href="#faq">Помощь</a>
+      </nav>
+      <div class="header-actions"><button class="language">RU⌄</button><button class="login">Войти</button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> ЦИФРОВЫЕ СЕРВИСЫ 24/7</p>
+          <h1>Всё для твоих<br /><em>аккаунтов.</em></h1>
+          <p class="intro">Мгновенная выдача сервисов для работы, общения и развлечений. Без ожидания — в пару кликов.</p>
+          <div class="hero-actions"><a class="primary-btn" href="#catalog">Выбрать сервис <b>→</b></a><a class="ghost-btn" href="#how">Как это работает</a></div>
+          <div class="trust"><span class="avatars"><i>А</i><i>М</i><i>К</i><i>+</i></span><span><strong>12 000+</strong> клиентов уже с нами</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="card-glow"></div>
+          <div class="floating-chip chip-top">⚡ <b>Мгновенно</b></div>
+          <div class="floating-chip chip-bottom"><span class="check">✓</span> Оплата прошла</div>
+          <div class="terminal"><div class="terminal-head"><span></span><span></span><span></span><b>dip.api</b></div><div class="terminal-lines"><p><i>›</i> Выберите услугу</p><p><i>›</i> Telegram Premium</p><p class="selected"><i>✓</i> Заказ создан <b>00:14</b></p></div></div>
+        </div>
+      </section>
+
+      <section class="stats wrap"><div><b>99.8%</b><span>успешных заказов</span></div><div><b>&lt; 2 мин</b><span>среднее время выдачи</span></div><div><b>4.9 / 5</b><span>оценка клиентов</span></div><div><b>24 / 7</b><span>поддержка в Telegram</span></div></section>
+
+      <section class="catalog wrap" id="catalog">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> КАТАЛОГ</p><h2>Выберите <em>категорию</em></h2></div><button class="view-all">Все сервисы <b>→</b></button></div>
+        <div class="categories" id="categoryButtons">
+          <button class="cat active" data-category="all">Все</button><button class="cat" data-category="telegram">Telegram</button><button class="cat" data-category="social">Соцсети</button><button class="cat" data-category="games">Игры</button><button class="cat" data-category="api">API</button>
+        </div>
+        <div class="products" id="products">
+          <article class="product featured" data-category="telegram"><div class="product-top"><span class="icon telegram">✈</span><span class="tag hot">ПОПУЛЯРНО</span></div><h3>Telegram Premium</h3><p>Премиум-подписка на ваш аккаунт</p><div class="product-bottom"><strong>от 249 ₽</strong><button aria-label="Купить Telegram Premium">→</button></div></article>
+          <article class="product" data-category="telegram"><div class="product-top"><span class="icon stars">✦</span><span class="tag">В НАЛИЧИИ</span></div><h3>Telegram Stars</h3><p>Звёзды для подарков и подписок</p><div class="product-bottom"><strong>от 99 ₽</strong><button aria-label="Купить Telegram Stars">→</button></div></article>
+          <article class="product" data-category="social"><div class="product-top"><span class="icon instagram">◎</span></div><h3>Instagram</h3><p>Подписчики, лайки и просмотры</p><div class="product-bottom"><strong>от 39 ₽</strong><button aria-label="Открыть Instagram">→</button></div></article>
+          <article class="product" data-category="games"><div class="product-top"><span class="icon steam">●</span></div><h3>Steam</h3><p>Пополнение кошелька Steam</p><div class="product-bottom"><strong>от 100 ₽</strong><button aria-label="Открыть Steam">→</button></div></article>
+          <article class="product api-product" data-category="api"><div class="product-top"><span class="icon api">&lt;/&gt;</span><span class="tag new">НОВОЕ</span></div><h3>SMS-активации API</h3><p>Номера и коды для интеграций</p><div class="product-bottom"><strong>от 5 ₽</strong><button aria-label="Открыть SMS API">→</button></div></article>
+          <article class="product api-product" data-category="api"><div class="product-top"><span class="icon api">{} </span></div><h3>Proxy API</h3><p>Резидентские и мобильные прокси</p><div class="product-bottom"><strong>от 75 ₽</strong><button aria-label="Открыть Proxy API">→</button></div></article>
+        </div>
+      </section>
+
+      <section class="replenish wrap" id="how"><div class="replenish-copy"><p class="eyebrow"><span></span> БЫСТРОЕ ПОПОЛНЕНИЕ</p><h2>Пополните<br /><em>Telegram</em></h2><p>Укажите номер аккаунта и выберите нужный пакет. Премиум и Stars поступят автоматически после оплаты.</p><div class="secure"><span>✓</span><span>Безопасная оплата<br /><b>Данные аккаунта защищены</b></span></div></div><form class="topup-form" id="topupForm"><div class="form-title"><span class="form-step">01</span><b>Данные аккаунта</b></div><label>Номер Telegram <div class="input-wrap"><span>+7</span><input id="phone" type="tel" inputmode="numeric" placeholder="999 000 00 00" autocomplete="tel" required /></div></label><div class="form-title second"><span class="form-step">02</span><b>Выберите услугу</b></div><div class="plans"><button type="button" class="plan selected" data-plan="Premium на 1 месяц" data-price="249"><span>Premium<br /><small>на 1 месяц</small></span><b>249 ₽</b></button><button type="button" class="plan" data-plan="100 Telegram Stars" data-price="189"><span>100 Stars<br /><small>моментально</small></span><b>189 ₽</b></button></div><button class="pay-btn" type="submit">Перейти к оплате <b>249 ₽ →</b></button><p class="form-note">Нажимая кнопку, вы принимаете <a href="#faq">условия сервиса</a></p></form></section>
+
+      <section class="how wrap"><p class="eyebrow"><span></span> ПРОСТОЙ ПРОЦЕСС</p><h2>Три шага до <em>результата</em></h2><div class="steps"><div><b>01</b><i>⌁</i><h3>Выберите услугу</h3><p>Найдите нужный сервис в каталоге</p></div><div><b>02</b><i>₽</i><h3>Оплатите заказ</h3><p>Удобным способом без комиссии</p></div><div><b>03</b><i>✓</i><h3>Получите результат</h3><p>Всё придёт автоматически</p></div></div></section>
+    </main>
+    <footer id="faq" class="wrap"><a class="brand" href="#top"><span class="brand-mark">D</span><span>DIP<span class="accent">.API</span></span></a><p>Цифровые услуги для тех, кто ценит скорость.</p><div><a href="#top">Поддержка</a><a href="#top">Правила</a><a href="#top">@dip_api</a></div></footer>
+    <div class="toast" id="toast">Заказ готов к оформлению</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
